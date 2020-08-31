@@ -2,18 +2,18 @@ package stalls;
 
 import behaviours.IReviewed;
 
-public abstract class Stall implements IReviewed {
+public abstract class Stall implements IReviewed{
 
     private String name;
     private String ownerName;
     private ParkingSpot parkingSpot;
-    private int rating; //added
+    private int rating;
 
     public Stall(String name, String ownerName, ParkingSpot parkingSpot) {
         this.name = name;
         this.ownerName = ownerName;
         this.parkingSpot = parkingSpot;
-        rating = 0;
+        this.rating = 0;
     }
 
     public String getName() {
